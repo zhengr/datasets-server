@@ -25,7 +25,9 @@ RUN apt-get update \
     poppler-utils \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+RUN  pip config --global set global.index-url https://mirrors.aliyun.com/pypi/simple/
+RUN  pip config --global set install.trusted-host mirrors.aliyun.com
 
 RUN python -m pip install --upgrade pip -i https://pypi.douban.com/simple
 RUN pip install "poetry==$POETRY_VERSION"
