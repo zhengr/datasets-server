@@ -63,3 +63,8 @@ module = [
 ]
 ignore_missing_imports = true
 # ^ prometheus_client is now typed, but starlette-prometheus requires an old version
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple"
+default = true

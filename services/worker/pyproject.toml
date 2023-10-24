@@ -106,3 +106,8 @@ module = [
 
 ]
 ignore_missing_imports = true
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple"
+default = true
