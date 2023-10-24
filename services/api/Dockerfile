@@ -26,7 +26,7 @@ RUN apt-get update \
 
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
-RUN RUN python -m pip install --upgrade pip -i https://pypi.douban.com/simple
+RUN python -m pip install --upgrade pip -i https://pypi.douban.com/simple
 RUN pip install "poetry==$POETRY_VERSION"
 
 WORKDIR /src
