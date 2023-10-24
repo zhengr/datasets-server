@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  repository-prefix: huggingface/datasets-server-
+  repository-prefix: zhengr/datasets-server-
 
 jobs:
   build-and-push-images:
