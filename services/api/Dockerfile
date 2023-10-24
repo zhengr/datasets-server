@@ -14,6 +14,10 @@ ENV PYTHONFAULTHANDLER=1 \
     POETRY_VIRTUALENVS_IN_PROJECT=true \
     PATH="$PATH:/root/.local/bin"
 
+# Update apt sources in china
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
+RUN sed -i 's/security.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
+
 # System deps:
 RUN apt-get update \
     && apt-get install -y build-essential unzip wget \
