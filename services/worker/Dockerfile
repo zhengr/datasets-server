@@ -28,7 +28,6 @@ RUN apt-get update \
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 # RUN pip install -U pip
-RUN sudo easy_install --upgrade pip
 RUN pip install "poetry==$POETRY_VERSION"
 
 WORKDIR /src
